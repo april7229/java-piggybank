@@ -6,7 +6,7 @@ public class PiggyBank {
 
     private ArrayList<Coin> coinArrayList
              = new ArrayList<>();
-
+    final int MAX_COINS = 50;
 
     public int getNumberOfCoins()
     {
@@ -21,6 +21,18 @@ public class PiggyBank {
              sum = sum + c.getValue();
          }
          return sum;
+     }
+
+     public int addCoins(int howmany, Coin c){
+
+         int added = 0;
+
+         while (added < howmany)
+         {
+             added +=1;
+             coinList.add(c);
+         }
+         
      }
 
 }
