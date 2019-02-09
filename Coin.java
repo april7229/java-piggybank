@@ -15,4 +15,4 @@ public class Coin
     {
         return this.value;
     }
-    }
+}
